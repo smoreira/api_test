@@ -27,8 +27,10 @@ def balance():
         response['status'] = False
         response['message'] = 'Invalid request'
     else:
-        if(account_id == 100):
-            response = 20
+        if account_id == "100":
+            return '20', 200
+        else:
+            return '0', 404
 
     return jsonify(response)
 
