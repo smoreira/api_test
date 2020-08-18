@@ -3,7 +3,6 @@ import numpy as np
 import urllib.request
 
 from flask import Flask, flash, request, redirect, url_for
-from flask import send_from_directory
 from flask import jsonify
 from flask import render_template
 from flask_cors import CORS
